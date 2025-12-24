@@ -67,6 +67,7 @@
         <div class="content flex-1 text-center md:text-left">
             <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is Easy!!</h2>
             <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
             <div class="flex flex-col gap-4 my-4 items-center md:items-start">
                     <input type="text" class="input" placeholder="Enter your name" />
                     <label class="input validator">
@@ -98,7 +99,8 @@
                     <br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
                     </p>
                     <button class="btn btn-primary w-32">Get Started</button>
-            </div>    
+            </div>
+                
         </div>
         <div class="image flex-1">
             <img src="./assets/hero-student.png" alt="">
@@ -110,6 +112,17 @@
         <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">Let's</span> Learn Vocabulary</h2>
         <div id="level-container" class="flex gap-5 flex-wrap justify-center">
 
+        </div>
+    </section>
+                    
+    <section>
+        <div class="join flex justify-center my-8">
+            <div>
+                <label class="input validator join-item">
+                    <input id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+                </label>
+            </div>
+            <button id="btn-search" class="btn btn-primary join-item">Search</button>
         </div>
     </section>
 
@@ -128,17 +141,17 @@
     <!-- Open the modal using ID.showModal() method -->
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
     <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
-    <div class="modal-box">
-        <div id="details-container" class="space-y-5">
-            
+        <div class="modal-box">
+            <div id="details-container" class="space-y-5">
+                
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
         </div>
-        <div class="modal-action">
-        <form method="dialog">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn">Close</button>
-        </form>
-        </div>
-    </div>
     </dialog>
         
     <script src="./script/index.js"></script>
